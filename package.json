@@ -1,0 +1,35 @@
+{
+  "name": "fake-notify-subscribe",
+  "version": "1.0.0",
+  "description": "Package fake người dùng đăng kí",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udhuong/fake-notify-subscribe.git"
+  },
+  "keywords": [
+    "fake",
+    "notify"
+  ],
+  "author": "ung dinh huong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/udhuong/fake-notify-subscribe/issues"
+  },
+  "homepage": "https://github.com/udhuong/fake-notify-subscribe#readme",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-contrib-nodeunit": "^3.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-notify": "^0.4.5"
+  }
+}
