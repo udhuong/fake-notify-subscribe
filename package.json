@@ -14,7 +14,7 @@
     "fake",
     "notify"
   ],
-  "author": "ung dinh huong",
+  "author": "ung dinh huong <ungdinhhuong@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/udhuong/fake-notify-subscribe/issues"
