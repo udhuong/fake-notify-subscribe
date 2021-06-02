@@ -2,7 +2,8 @@
 ;(function ($, window, document, undefined) {
     var pluginName = "udhNotify",
         defaults   = {
-            propertyName: "value"
+            propertyName: "value",
+            textAgo: 'Vừa đặt xe'
         };
 
     var dataTemple = [
@@ -87,7 +88,7 @@
                     </div>
                     <div class="notify-title">${value.title}</div>
                     <div class="notify-content">${value.content}</div>
-                    <div class="notify-time">Vừa đặt xe</div>
+                    <div class="notify-time">${this.options.textAgo}</div>
                 </div>`;
         },
         shuffle: function (array) {

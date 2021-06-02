@@ -107,29 +107,29 @@ module.exports = function (grunt) {
 
     // Task(s).
     grunt.registerTask('css', ['sass', 'cssmin', 'notify:css']);
-    grunt.registerTask('js', ['jshint','uglify']);
+    grunt.registerTask('js', ['uglify']);
     grunt.registerTask('image', ['imagemin']);
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['css', 'js']);
 
-    grunt.registerTask('dev', 'Run for dev', function () {
-        var done = this.async();
-        grunt.log.writeln('Processing task...');
-        grunt.task.run(['sass', 'cssmin', 'notify:css']);
-        done();
-        grunt.log.writeln('Done task...');
-    });
-
-    grunt.registerTask('dev', 'Run for dev', function (arg1, arg2) {
-        grunt.log.writeln('Processing task...');
-        if (arguments.length > 0) {
-            grunt.log.writeln('Log: ' + arg1 + ' - ' + arg2);
-        } else {
-            grunt.log.error('Has error!');
-        }
-        grunt.log.writeln('Done task...');
-    });
-
-    grunt.registerMultiTask('log', 'Log stuff.', function() {
-        grunt.log.writeln(this.target + ': ' + this.data);
-    });
+    // grunt.registerTask('dev', 'Run for dev', function () {
+    //     var done = this.async();
+    //     grunt.log.writeln('Processing task...');
+    //     grunt.task.run(['sass', 'cssmin', 'notify:css']);
+    //     done();
+    //     grunt.log.writeln('Done task...');
+    // });
+    //
+    // grunt.registerTask('dev', 'Run for dev', function (arg1, arg2) {
+    //     grunt.log.writeln('Processing task...');
+    //     if (arguments.length > 0) {
+    //         grunt.log.writeln('Log: ' + arg1 + ' - ' + arg2);
+    //     } else {
+    //         grunt.log.error('Has error!');
+    //     }
+    //     grunt.log.writeln('Done task...');
+    // });
+    //
+    // grunt.registerMultiTask('log', 'Log stuff.', function() {
+    //     grunt.log.writeln(this.target + ': ' + this.data);
+    // });
 };
