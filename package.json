@@ -1,6 +1,6 @@
 {
   "name": "fake-notify-subscribe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package fake người dùng đăng kí",
   "main": "index.js",
   "scripts": {
