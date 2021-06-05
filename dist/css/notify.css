@@ -56,7 +56,7 @@
   overflow-wrap: break-word;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: calc(100% - 155px);
+  max-width: calc(100% - 30px);
   overflow: hidden;
 }
 
